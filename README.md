@@ -18,5 +18,6 @@ For any questions or further information about this project, feel free to reach 
 
 Mohamed MARROUKI
 Email: mohamed.marrouki@eurecom.fr
+ AND 
 Souha LABIDI
 Email: souha.labidi@eurecom.fr
