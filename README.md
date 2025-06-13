@@ -14,7 +14,9 @@ Classification Outcomes: Reporting and analysis of the model's performance on th
 Practical Matters & Limitations: Discussion of challenges encountered during implementation, such as hyperparameter tuning sensitivity, and other real-world considerations.
 
 Contact
-For any questions or further information about this project, feel free to reach out:
+For any questions or further information about this project, feel free to reach out to the project contributors:
 
 Mohamed MARROUKI
 Email: mohamed.marrouki@eurecom.fr
+Souha LABIDI
+Email: souha.labidi@eurecom.fr
