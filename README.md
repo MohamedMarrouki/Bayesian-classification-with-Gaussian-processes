@@ -1,33 +1,59 @@
-# Bayesian-classification-with-Gaussian-processes
-Reproducing results from : Bayesian classification with Gaussian processes by Williams and Barber in 1998
+# Bayesian Classification with Gaussian Processes (Reproduction Study)
 
-## Bayesian Classification with Gaussian Processes
+This repository presents a reproduction and extension of the paper:
 
-This repository houses the code and resources for a project exploring Bayesian Classification using Gaussian Processes. The work specifically applies these techniques to the Pima Indians Diabetes and Crabs datasets, with the primary focus of the accompanying report (and this documentation) being on the Pima Indians Diabetes dataset.
+**Williams and Barber (1998)** – *Bayesian Classification with Gaussian Processes*.
 
-## Project Overview
-This project aims to demonstrate the application of Gaussian Processes for classification tasks. Key areas covered include:
+We revisit this foundational work through theoretical reimplementation and practical experimentation using two real-world datasets: **Crabs** and **Pima Indians Diabetes**.
 
-### Data Preprocessing: 
-Essential steps to clean and prepare the Pima Indians Diabetes dataset, including handling missing values and feature scaling.
+---
 
-### Exploratory Data Analysis (EDA): 
-Visualizations and statistical analysis to understand the characteristics and distributions of the dataset's features.
+## Objectives
 
-### Gaussian Process Classification: 
-Implementation of GP models for classification, focusing on practical aspects and optimization.
+- Understand and implement Gaussian Process classification using the Laplace approximation.
+- Evaluate GP models on different datasets and preprocessing pipelines.
+- Compare GPs to classical classifiers like SVM.
+- Explore library limitations (GPy, GPflow) and practical implementation barriers.
 
-### Classification Outcomes: 
-Reporting and analysis of the model's performance on the Pima Indians Diabetes dataset.
+---
 
-### Practical Matters & Limitations: 
-Discussion of challenges encountered during implementation, such as hyperparameter tuning sensitivity, and other real-world considerations.
+## Crabs Dataset
 
-# Contact
-For any questions or further information about this project, feel free to reach out to the project contributors:
+- Biometric data for 200 crabs from two species (Blue, Orange) and two sexes.
+- Binary classification performed using selected numerical features.
+- Investigated the impact of feature scaling and kernel sensitivity.
 
-Mohamed MARROUKI
-Email: mohamed.marrouki@eurecom.fr
- AND 
-Souha LABIDI
-Email: souha.labidi@eurecom.fr
+---
+
+## Pima Indians Diabetes Dataset
+
+- Dataset includes 768 samples with 8 medical predictor variables.
+- Binary outcome: diabetic (1) or not (0).
+- Used for additional experimentation with kernels (RBF, Matern) and preprocessing effects.
+
+---
+
+## Key Takeaways
+
+- Laplace approximation is challenging to implement manually but instructive.
+- GP models are highly sensitive to feature scaling.
+- StandardScaler and MinMaxScaler both yield different hyperparameter behaviors.
+- GPy proved easier to use than GPflow due to TensorFlow compatibility issues.
+- SVM outperformed GP in accuracy and training time on both datasets, but lacked uncertainty estimation.
+
+---
+
+##  Notes
+
+- GPflow notebooks may fail if TensorFlow version is not compatible.
+- Manual Newton optimization steps were coded to better understand posterior approximation.
+
+---
+
+## Reference
+
+> Williams, C. K. I., & Barber, D. (1998). Bayesian classification with Gaussian processes. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 20(12), 1342–1351.
+
+---
+
+For any questions or contributions, feel free to open an issue or fork the repository.
